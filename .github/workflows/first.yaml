@@ -9,6 +9,7 @@ jobs:
       - name: Install package
         run: echo "Installation done"
   deploy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
